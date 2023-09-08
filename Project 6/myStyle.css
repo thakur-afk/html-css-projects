@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html { scroll-behavior: smooth;}
+body{
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+nav{
+    background-color: blue;
+    height: 70px;
+    box-shadow: 5px 5px 5px black;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+
+    color: white;
+}
+div{
+    scroll-margin: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding-top:20px;
+}
+.logo h1{
+    font-size: 2.2rem;
+}
+.clicks{
+    display: flex;
+    gap: 15px;
+}
+.clicks a{
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+   /* / padding-bottom: 5px; */
+   text-decoration: none;
+    border: 0;
+}
+.clicks a:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.home{
+    background-image: url("images/hero_image.png");
+    /* width: 100%; */
+    max-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+   
+}
+.homeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    padding-top: 100px;
+    gap: 50px;
+
+}
+.homeText h1{
+    font-size: 4.5rem;
+}
+.homeText h2{
+    font-size: 2.5rem;
+}
+.second{
+    background-color: rgb(32, 32, 66);
+    color: white;
+    max-height: 75vh;
+}
+.secondText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+.secondText h2{
+    font-size: 0.9rem;
+}
+.secondText button{
+    background-color: red;
+    padding: 10px 15px;
+    border: 0;
+    color: white;
+
+}
+.white{
+    background-color: white;
+    max-height: 200vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+   
+}
+.whiteText{
+    display: flex;
+    padding-top: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap :50px;
+    line-height: 1.4;
+}
+.whiteText h1{
+    font-size: 1.2rem;
+}
+.whiteText button{
+    background-color: blue;
+    padding: 10px;
+    border: 0;
+    color: white;
+}
+.lap img{
+    max-width: 1030px;
+}
+@media (max-width:1030px) {
+    .whiteText{
+        padding-top: 150px;
+    }
+
+   .lap img,.imgIpad{
+    max-width: 600px;
+}
+.giftImg{
+    max-width: 300px;
+    height: 300px;
+}
+}
+
+.entertainment{
+    /* background-image: url("images/video.png"); */
+    
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+color: white;
+display: grid;
+place-items: center;
+text-align: center;
+
+
+}
+.entertainmentText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    line-height: 1.2;
+    color: white;
+} 
+.entertainmentText h1{
+    font-size: 1rem;
+}
+.gift{
+    background-color: white;
+   margin: 100px 0;
+}
+.giftItems{
+display: flex;
+gap: 30px;
+}
+.giftText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.giftText button{
+    width: fit-content;
+    padding: 10px;
+    background-color: blue;
+    border: 0;
+    color: white;
+}
+.bottom{
+    background-color: rgb(55, 55, 134);
+    color: white;
+    padding: 30px 0;
+}
+.bottomItems{
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    /* width: 180px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+.content h1{
+    border-bottom: 2px solid white;
+    /* width: fit-content; */
+    font-size: 1rem;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+footer{
+    background-color: rgb(39, 39, 215);
+}
+.foot{
+    
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+}
+#gifty{
+    scroll-margin: 100px;
+}
+video {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  height: 100%;
+  width: 100%;
+  }
+  .video-wrapper{
+    position: relative;
+    height: 100vh;
+  }
+
+  @media (max-width:620px) {
+    .lap img,.imgIpad{
+        max-width: 400px;
+    }
+    .giftImg{
+        max-width: 200px;
+        height: 200px;
+    }
+    .giftItems{
+        flex-direction: column;
+    }
+    .bottomItems{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .whiteText{
+        /* padding-top: 0; */
+    }
+    .bars{
+        visibility: hidden;
+    }
+    .entertainment{
+        height: 50vh;
+    }
+    .gift{
+        padding-left: 10px;
+    }
+
+    .top{
+        justify-content: space-around;
+    }
+    
+  }
